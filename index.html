@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EcoCanje Jalisco</title>
+<link rel="icon" href="static/Logo.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root {
+    --verde: #2ecc71;
+    --verde-oscuro: #1e8449;
+    --blanco: #ffffff;
+    --negro: #111111;
+    --gris: #f5f5f5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--gris);
+    color: var(--negro);
+    scroll-behavior: smooth;
+}
+
+header {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('TU_IMAGEN_PORTADA_AQUI.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.logo {
+    margin-bottom: 15px;
+}
+
+.logo img{
+    border-radius: 50%;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    margin: 20px 0;
+}
+
+.btn {
+    padding: 12px 25px;
+    background: var(--verde);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: var(--verde-oscuro);
+}
+
+section {
+    padding: 80px 10%;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+img.placeholder {
+    width: 100%;
+    border-radius: 12px;
+    margin-top: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.stat h2 {
+    font-size: 2.5rem;
+    color: var(--verde);
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background: var(--verde);
+    color: white;
+}
+
+footer {
+    background: var(--negro);
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 0.6s;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+</style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="static/Logo.jpg" alt="Logo">
+    </div>
+    <h1>EcoCanje Jalisco</h1>
+    <p>Separa bien, gana más.</p>
+    <a href="#descripcion" class="btn">Conocer más</a>
+</header>
+
+<section id="descripcion" class="fade-in">
+    <h2>Descripción</h2>
+
+    <div class="card">
+        EcoCanje es un sistema innovador de reciclaje automatizado que busca combatir la falta de cultura ambiental y reducir la acumulación de residuos mediante incentivos económicos y sociales. <br><br>
+
+El proyecto consiste en la integración de una aplicación móvil con módulos físicos inteligentes de reciclaje. Los usuarios crean una cuenta en la app, donde se genera un código QR único que funciona como identificador. Al interactuar con el módulo EcoCanje, el usuario escanea su código, selecciona el tipo de residuo a reciclar y deposita el material. <br><br>
+
+El sistema mide automáticamente el peso del residuo y asigna puntos proporcionales a la cantidad reciclada. Estos puntos se convierten en dinero digital dentro de la plataforma, con una equivalencia de 10 puntos = 1 peso mexicano, el cual puede ser retirado por el usuario o donado a instituciones como el Hospicio Cabañas y la Cruz Roja Mexicana. <br><br>
+
+Inicialmente, EcoCanje será implementado en una preparatoria como proyecto piloto, con el objetivo de expandirse a otras escuelas y posteriormente a espacios públicos mediante módulos más grandes y resistentes. <br><br>
+
+Lo que distingue a EcoCanje es su automatización completa, eliminando la necesidad de supervisión y facilitando el reciclaje de forma rápida, accesible y recompensada. De esta manera, no solo se promueve una mayor participación en el reciclaje, sino que también se genera un impacto positivo tanto ambiental como social.
+    </div>
+</section>
+
+
+
+<section id="Description" class="fade-in">
+    <h2>Description</h2>
+
+    <div class="card">
+EcoCanje is an innovative automated recycling system that seeks to combat the lack of environmental culture and reduce the accumulation of waste through economic and social incentives. <br><br>
+
+The project consists of the integration of a mobile application with intelligent physical recycling modules. Users create an account in the app, where a unique QR code is generated that functions as an identifier. When interacting with the EcoCanje module, the user scans its code, selects the type of waste to recycle and deposits the material. <br><br>
+
+The system automatically measures the weight of the waste and assigns points proportional to the amount recycled. These points are converted into digital money within the platform, with an equivalence of 10 points = 1 Mexican peso, which can be withdrawn by the user or donated to institutions such as Hospicio Cabañas and the Mexican Red Cross. <br><br>
+
+Initially, EcoCanje will be implemented in a high school as a pilot project, with the aim of expanding to other schools and later to public spaces through larger and more resistant modules. <br><br>
+
+What sets EcoCanje apart is its complete automation, eliminating the need for supervision and making recycling fast, accessible and rewarding. In this way, not only is greater participation in recycling promoted, but it is also generated a positive environmental and social impact.
+    </div>
+</section>
+
+
+<section id="justificacion" class="fade-in">
+    <h2>Justificación</h2>
+
+    <div class="card">
+En la actualidad, uno de los principales problemas ambientales es la falta de cultura de reciclaje, especialmente entre los jóvenes. A pesar de que existen campañas de concientización, muchas personas no reciclan debido a la falta de incentivos, accesibilidad o hábitos establecidos, lo que provoca un aumento en la acumulación de residuos y un impacto negativo en el medio ambiente. <br><br>
+
+Ante esta problemática, surge EcoCanje como una solución innovadora que combina tecnología y sostenibilidad para motivar el reciclaje de manera práctica y atractiva. Al ofrecer recompensas económicas directas a través de un sistema de puntos canjeables, se incentiva la participación activa de los usuarios, transformando el reciclaje en una actividad beneficiosa tanto para el individuo como para la sociedad. <br><br>
+
+Además, el enfoque automatizado del sistema elimina barreras como la supervisión constante y facilita su implementación en espacios educativos, comenzando en nivel preparatoria, donde es clave fomentar hábitos responsables desde temprana edad. Esto permite no solo generar un cambio inmediato en la gestión de residuos, sino también formar una generación más consciente y comprometida con el medio ambiente. <br><br>
+
+Por otro lado, la opción de donar las ganancias a instituciones como el Hospicio Cabañas y la Cruz Roja Mexicana fortalece el impacto social del proyecto, promoviendo valores de solidaridad y responsabilidad colectiva. <br><br>
+
+En este sentido, EcoCanje no solo busca reducir la cantidad de basura, sino también cambiar la mentalidad de las personas, demostrando que pequeñas acciones, cuando son incentivadas correctamente, pueden generar grandes cambios ambientales y sociales.
+    </div>
+</section>
+
+
+<section id="objetivos" class="fade-in">
+    <h2>Objetivos</h2>
+
+    <div class="card">
+        <strong>Objetivo general</strong><br><br>
+
+        Desarrollar e implementar un sistema automatizado de reciclaje denominado EcoCanje, que incentive la participación de estudiantes en prácticas sostenibles mediante el uso de recompensas económicas digitales, con el fin de reducir la generación de residuos y fomentar una cultura de reciclaje en el entorno escolar.
+        
+        <br><br>
+
+        <strong>Objetivos específicos</strong><br><br>
+
+        1. Diseñar e implementar un módulo de reciclaje automatizado capaz de identificar usuarios mediante código QR y registrar sus depósitos.<br><br>
+
+        2. Desarrollar una aplicación móvil que permita a los usuarios crear cuentas, acumular puntos y gestionar sus recompensas.<br><br>
+
+        3. Integrar un sistema de medición por peso para calcular de manera precisa la cantidad de residuos reciclados y asignar puntos proporcionalmente.<br><br>
+
+        4. Establecer un sistema de recompensas donde los usuarios puedan canjear puntos por dinero (10 puntos = 1 MXN) o donarlos a instituciones.<br><br>
+
+        5. Fomentar la cultura del reciclaje entre los estudiantes mediante incentivos que promuevan la participación constante.<br><br>
+
+        6. Implementar un programa piloto en una preparatoria para evaluar el funcionamiento y aceptación del sistema.<br><br>
+
+        7. Analizar los resultados del prototipo para identificar mejoras y posibilidades de expansión a otras instituciones educativas.<br><br>
+
+        8. Promover el impacto ambiental y social, reduciendo la cantidad de residuos y apoyando causas sociales a través de donaciones.
+    </div>
+</section>
+
+
+<section id="metodologia" class="fade-in">
+    <h2>Descripción metodológica</h2>
+
+    <div class="card">
+La metodología empleada en el desarrollo del proyecto EcoCanje es de tipo experimental, ya que se basa en la implementación de un prototipo funcional en un entorno real con el objetivo de analizar su impacto en los hábitos de reciclaje. <br><br>
+
+El sistema está compuesto por un módulo físico automatizado y una aplicación móvil. El módulo utiliza un microcontrolador ESP32 como unidad principal, junto con componentes como servomotores SG90 para el control de compuertas, pulsadores para interacción básica, una cámara ESP32-CAM para futuras funciones de identificación y un sistema de medición de peso basado en celdas de carga conectadas a un módulo HX711, lo que permite registrar con precisión la cantidad de residuos depositados. <br><br>
+
+La interacción del usuario sigue un flujo definido: primero, el usuario escanea su código QR desde la aplicación móvil; posteriormente, selecciona el tipo de residuo a reciclar; después deposita el material en el módulo; el sistema mide el peso del residuo y, finalmente, asigna automáticamente los puntos correspondientes a la cuenta del usuario. <br><br>
+
+La aplicación móvil, desarrollada en Android Studio y Xcode, permite la gestión de cuentas, visualización de puntos y control de recompensas. La información se almacena en una base de datos en la nube mediante Firestore, lo que facilita la sincronización de datos en tiempo real. La comunicación entre el módulo y la aplicación se realiza a través de conexión WiFi. <br><br>
+
+El proyecto contempla una fase piloto con duración de un año en una institución educativa, donde se recopilarán datos sobre el uso del sistema, la frecuencia de participación de los usuarios y la cantidad de residuos reciclados. Estos datos permitirán evaluar el impacto del prototipo y realizar mejoras para su posible expansión. <br><br>
+
+El criterio de evaluación del proyecto se basa en el nivel de adopción por parte de los usuarios y en el incremento del reciclaje, estableciendo como meta un aumento mínimo del 5% en los índices de reciclaje en Jalisco. Asimismo, se analizará la viabilidad de escalabilidad del sistema hacia otras instituciones educativas y espacios públicos. <br><br>
+
+De esta manera, la metodología no solo permite validar el funcionamiento técnico del sistema, sino también medir su impacto real en la sociedad y en el medio ambiente.
+    </div>
+</section>
+
+
+<section id="beneficiarios" class="fade-in">
+    <h2>Beneficiarios del proyecto</h2>
+
+    <div class="card">
+El proyecto EcoCanje está diseñado para generar beneficios en distintos sectores de la sociedad, tanto de manera directa como indirecta. <br><br>
+
+<strong>Beneficiarios directos</strong><br><br>
+
+Los principales beneficiarios directos son los estudiantes de nivel preparatoria donde se implementará el proyecto piloto. Ellos podrán acceder a un sistema innovador que les permite reciclar de manera sencilla y obtener recompensas económicas a cambio, incentivando su participación activa en el cuidado del medio ambiente. Además, desarrollarán hábitos sostenibles que podrán aplicar a largo plazo. <br><br>
+
+Asimismo, las instituciones educativas se benefician al contar con una herramienta tecnológica que promueve la educación ambiental, mejora la gestión de residuos dentro de sus instalaciones y fortalece su compromiso con la sostenibilidad. <br><br>
+
+<strong>Beneficiarios indirectos</strong><br><br>
+
+De manera indirecta, la sociedad en general se ve beneficiada debido a la reducción de residuos y la mejora en la cultura de reciclaje. Esto contribuye a disminuir la contaminación y a generar un entorno más limpio. <br><br>
+
+También se benefician instituciones sociales que reciben donaciones a través del sistema, como el Hospicio Cabañas y la Cruz Roja Mexicana, ya que obtienen recursos económicos derivados de la participación de los usuarios. <br><br>
+
+Finalmente, el medio ambiente es uno de los principales beneficiarios, ya que la correcta gestión de residuos permite reducir el impacto ambiental, disminuir la acumulación de basura y fomentar el aprovechamiento de materiales reciclables. <br><br>
+
+En conjunto, EcoCanje genera un impacto positivo que trasciende al usuario individual, promoviendo beneficios económicos, sociales y ambientales.
+    </div>
+</section>
+
+
+<section id="localizacion" class="fade-in">
+    <h2>Localización geográfica de la implementación del proyecto</h2>
+
+    <div class="card">
+La implementación inicial del proyecto EcoCanje se llevará a cabo en mi Preparatoria (La preparatoria Jalisco), donde se instalará el módulo de reciclaje como parte de una prueba piloto. <br><br>
+
+Esta primera etapa permitirá evaluar el funcionamiento del sistema en un entorno controlado, así como analizar la participación de los estudiantes y el impacto en los hábitos de reciclaje dentro de la comunidad escolar. <br><br>
+
+A partir de los resultados obtenidos en esta fase inicial, se contempla la posibilidad de extender el proyecto a otras instituciones educativas, así como a espacios públicos, mediante la implementación de módulos más grandes y resistentes. <br><br>
+
+De esta manera, la localización geográfica inicial no solo permite validar el proyecto, sino que también sienta las bases para su crecimiento y replicación en otras zonas del estado y del país.
+    </div>
+</section>
+
+
+<section id="historia" class="fade-in">
+<h2>Como surgió todo...</h2>
+<div class="card">
+<p>
+Un día caminaba con mi hermano… y lo que debía ser un parque, estaba lleno de basura.
+<br><br>
+Me preguntó: “¿Por qué la gente no recicla?”
+<br>
+Pensé un momento y respondí: “Porque sienten que no ganan nada”.
+<br><br>
+Entonces dijo algo que lo cambió todo:
+<br>
+“No es flojera… es falta de motivación”.
+<br><br>
+En ese momento entendimos algo:
+no necesitas obligar a las personas a cambiar… necesitas darles una razón.
+<br><br>
+Así nació EcoCanje Jalisco.
+</p>
+</div>
+</section>
+
+<section id="problema" class="fade-in">
+<h2>El Problema</h2>
+<br>
+<div class="stats">
+<div class="stat"><h2>8000+</h2><p>toneladas de residuos generados diariamente</p></div>
+<div class="stat"><h2>15%</h2><p>es lo unico que se recicla.</p></div>
+</div>
+</section>
+
+<section class="fade-in">
+<h2>Solución</h2>
+<div class="card">
+<p>EcoCanje Jalisco es un sistema automatizado que recompensa a las personas por reciclar mediante puntos que pueden convertirse en dinero o donarse a organizaciones.</p>
+</div>
+</section>
+
+<section class="fade-in">
+<h2>Cómo Funciona</h2>
+<div class="grid">
+<div class="card">Crear cuenta y obtener QR</div>
+<div class="card">Escanear en módulo</div>
+<div class="card">Seleccionar residuo</div>
+<div class="card">Depositar material</div>
+<div class="card">Pesar automáticamente</div>
+<div class="card">Recibir puntos</div>
+</div>
+</section>
+
+<section class="fade-in">
+<h2>Impacto</h2>
+<div class="card">
+<p>EcoCanje transformará la forma de reciclar, incentivando a más personas y creando una ciudad más limpia, digna y saludable para todos.</p>
+</div>
+</section>
+
+<section class="fade-in">
+<h2>Costos</h2>
+<table>
+
+<tr><th>Componente</th><th>Descripción</th><th>Costo</th></tr>
+
+<tr><td>Módulo ESP32</td><td>Microcontrolador x1</td><td>$150</td></tr>
+
+<tr><td>Servomotores</td><td>sg90 x3</td><td>$320</td></tr>
+
+<tr><td>Pulsadores</td><td>Cantidad x3</td><td>$30</td></tr>
+
+<tr><td>ESP32 CAM</td><td>Lector de QR x1</td><td>$150</td></tr>
+
+<tr><td>Cables</td><td>Paquete de cables x1</td><td>$150</td></tr>
+
+<tr><td>Módulo Hx711</td><td>Lector de Gramaje</td><td>$100</td></tr>
+
+<tr><td>BreadBoards</td><td>Protoboard para conectar x2</td><td>$200</td></tr>
+
+<tr><td>Leds</td><td>Indicadores de estado x4</td><td>$20</td></tr>
+
+<tr><td>Buzzers</td><td>Sonido x1</td><td>$20</td></tr>
+
+<tr><td>App Android</td><td>Desarrollo de la aplicacion de Android</td><td>$15000 (Este es el precio actual en el mercado para un desarrollador, en el caso de que lo diseñe un tercero, lo añadimos al costo total maestra?, porque yo los desarrolle)</td></tr>
+
+<tr><td>App IOS</td><td>Desarrollo de app de IOS + Licencia de Xcode y App Sotre</td><td>$20000 + $1700 al año (Este es el precio actual en el mercado para un desarrollador, en el caso de que lo diseñe un tercero, lo añadimos al costo total maestra?, porque yo los desarrolle)</td></tr>
+
+<tr><td>Madera</td><td>MDF 3mm</td><td>$2000</td></tr>
+
+<tr><td>Plexiglass y pintura</td><td>6mm</td><td>$1500</td></tr>
+
+<tr><td>Fuente de alimentación</td><td>Pila de 5V</td><td>$170</td></tr>
+
+<tr><td><br>Subtotal</td><td></td><td>$4810 (Sin contar las apps)</td></tr>
+</table>
+</section>
+
+
+
+<section id="bibliografia" class="fade-in">
+    <h2>Bibliografía</h2>
+
+    <div class="card">
+NTR Guadalajara. (2025). Jalisco es líder en producción de basura. Disponible en: https://www.ntrguadalajara.com/post.php?id_nota=236616 <br><br>
+
+Milenio. (2023). En Jalisco se generan más de tres millones de toneladas de basura al año. Disponible en: https://www.milenio.com/politica/comunidad/jalisco-ano-generan-3-millones-toneladas-basura <br><br>
+
+Gobierno de Jalisco. (2023). Información sobre gestión de residuos en el estado. Disponible en: https://jalisco.gob.mx/prensa/noticias/140928 <br><br>
+
+ACR Latinoamérica. (s.f.). Cinco razones por las que la gente no recicla. Disponible en: https://www.acrlatinoamerica.com/novedades/ultimas-noticias/52-lo-verde/3518-cinco-razones-por-las-que-la-gente-no-recicla-y-cinco-razones-por-las-que-deberian.html <br><br>
+
+Multiplastic. (s.f.). Precio de tapitas de plástico por kilo. Disponible en: https://www.multiplastic.com.mx/tapitas-de-plastico-precio-por-kilo-todo-lo-que-necesitas-saber <br><br>
+
+Recyglass. (s.f.). Precios del vidrio reciclado. Disponible en: https://www.recyglass.com.mx/precios-del-vidrio/ <br><br>
+
+Infobae. (2024). Cuánto se gana vendiendo cartón en México. Disponible en: https://www.infobae.com/mexico/2024/01/12/cuanto-se-gana-vendiendo-carton-en-mexico-esto-es-lo-que-podrias-ganar-en-su-venta-por-kilo/ <br><br>
+
+Reyplast. (s.f.). Cómo promover el reciclaje en la escuela. Disponible en: https://www.reyplast.pe/blog/como-promover-reciclaje-escuela/ <br><br>
+
+Artículos académicos y reportes sobre gestión de residuos sólidos en México y el mundo.
+    </div>
+</section>
+
+
+
+<footer>
+<p>EcoCanje Jalisco</p>
+<p>Desarrollado por René Ramírez Venegas</p>
+<p>2026 - Todos los Derechos Reservados</p>
+<p>Contacto: maintenanceBEZ@gmail.com</p>
+</footer>
+
+
+
+<script>
+const elements = document.querySelectorAll('.fade-in');
+window.addEventListener('scroll', () => {
+    elements.forEach(el => {
+        const top = el.getBoundingClientRect().top;
+        if(top < window.innerHeight - 100){
+            el.classList.add('visible');
+        }
+    });
+});
+</script>
+
+</body>
+</html>
